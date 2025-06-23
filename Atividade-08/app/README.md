@@ -75,9 +75,15 @@ No navegador, acesse:
 http://localhost:3000/index.html
 ```
 
+### 7. Acesse outros endpoints
+
+```
+Para acessar os demias endpoints, utilize postman, ou simlares. 
+```
+
 ---
 
-### 7. Encerrar o servidor
+### 8. Encerrar o servidor
 
 Caso esteja rodadando no modo dev, pressione `Ctrl + C` no terminal, caso esteja no modo production, execute:
 
