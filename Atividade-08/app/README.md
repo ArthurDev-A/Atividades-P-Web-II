@@ -41,12 +41,17 @@ DATABASE=backend_usuarios
 DATABASE_USER=root
 PASSWORD=
 ```
+🗒️ Observação:
+
+Se preferir não criar o banco de dados manualmente, mantenha o valor de DATABASE como está no arquivo .env.example. O banco será criado automaticamente ao executar o próximo comando.
+
+Caso você já tenha criado o banco manualmente, pode ignorar o passo 4.
 
 ---
 
 ### 4. Crie o banco de dados e tabelas
 
-Excute no Xamp o mysql, com ele funcionando, rode
+Excute no Xamp o mysql, com ele funcionando, execute:
 ```bash
 npm run create_db
 ```
