@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+    
+    <h3>Using CSS to style an HTML Form</h3>
+    
+    <div>
+        <p><%= msg %></p>
+        <% if (success) { %>
+            <p>Tipo de acesso: <%= nivel_acesso %></p>
+        <% } %>
+        <button class="button" onclick="window.location.href='/'">Voltar</button>
+    </div>
+    
+    </body>
+</html>
+    
