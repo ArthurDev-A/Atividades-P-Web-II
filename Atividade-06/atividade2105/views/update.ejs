@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+    <body>
+    
+    <div>
+      <form id="form-update">
+
+          <input type="hidden" id="id" name="id" value="<%= material.id %>">
+
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" value="<%= material.nome %>" placeholder="Nome..">
+      
+          <label for="descricao">Descrição</label>
+          <input type="text" id="descricao" name="descricao" value="<%= material.descricao %>" placeholder="Descrição..">
+
+          <label for="quantidade">Quantidade</label>
+          <input type="text" id="quantidade" name="quantidade" value="<%= material.quantidade %>" placeholder="Quantidade..">
+      
+          <input class="button" type="submit" value="Update">
+      </form>
+    </div>
+    <script src="/javascripts/update.js"></script>
+  </body>
+</html>

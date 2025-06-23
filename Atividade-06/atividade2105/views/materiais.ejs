@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link rel='stylesheet' href='/stylesheets/materiais.css' />
+    </head>
+    <body>
+    
+        <div>
+            <% for (const material of materiais) { %>
+                <div class="container">
+                    <div class="item">
+                        <div class="infos">
+                            <div><strong>ID:</strong> <%= material.id %></div>
+                            <div><strong>Nome:</strong> <%= material.nome %></div>
+                            <div><strong>Descrição:</strong> <%= material.descricao %></div>
+                            <div><strong>Quantidade:</strong> <%= material.quantidade %></div>
+                        </div>
+                        <div class="acoes">
+                            <button class="editar" material_id="<%= material.id %>">Editar</button>
+                            <button class="deletar" material_id="<%= material.id %>">Excluir</button>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+        <script src="/javascripts/materiais.js"></script>
+    </body>
+</html>
+    
