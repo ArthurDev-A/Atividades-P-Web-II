@@ -6,6 +6,8 @@ Este projeto é um backend básico para gerenciamento de usuários com cadastro,
 
 ## 🚀 Instruções de uso
 
+🗒️ Observação: Todos os comandos abaixo devem ser executados a partir da pasta `app/` (raiz do projeto).
+
 ### 1. Acesse a pasta raiz do projeto
 
 ```bash
@@ -45,7 +47,7 @@ PASSWORD=
 ### 4. Crie o banco de dados e tabelas
 
 Excute no Xamp o mysql, com ele funcionando, rode
-```
+```bash
 npm run create_db
 ```
 
@@ -71,15 +73,15 @@ npm run production
 
 No navegador, acesse:
 
-```
+```navegador
 http://localhost:3000/index.html
 ```
 
+---
+
 ### 7. Acesse outros endpoints
 
-```
 Para acessar os demias endpoints, utilize postman, ou simlares. 
-```
 
 ---
 
