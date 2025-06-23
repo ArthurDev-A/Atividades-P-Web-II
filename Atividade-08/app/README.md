@@ -46,7 +46,7 @@ PASSWORD=
 ```
 🗒️ Observação:
 
-Se preferir não criar o banco de dados manualmente, mantenha o valor de DATABASE como está no arquivo .env.example. O banco será criado automaticamente ao executar o próximo comando.
+Se preferir não criar o banco de dados manualmente, mantenha o valor de `DATABASE` como está no arquivo `.env.example`. O banco será criado automaticamente ao executar o próximo comando.
 
 Caso você já tenha criado o banco manualmente, pode ignorar o passo 4.
 
