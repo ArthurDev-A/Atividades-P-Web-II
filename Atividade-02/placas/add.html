@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Adicionar Veículo</title>
+</head>
+<body>
+  <h1>Adicionar Novo Veículo</h1>
+
+  <form id="form-veiculo">
+    <label>Marca: <input type="text" name="marca" id="marca" required></label><br>
+    <label>Modelo: <input type="text" name="modelo" id="modelo" required></label><br>
+    <label>Ano de Fabricação: <input type="text" name="ano_fabric" id="ano_fabric" required></label><br>
+    <label>Cor: <input type="text" name="cor" id="cor" required></label><br>
+    <label>Placa: <input type="text" name="placa" id="placa" required></label><br><br>
+    <button type="submit">Adicionar Veículo</button>
+  </form>
+
+  <div id="resultado" style="margin-top: 15px;"></div>
+
+
+
+  <script>
+    document.getElementById('form-veiculo').addEventListener('submit', function(event) {
+        const formData = new FormData(event.target);
+
+        fetch('https://mauricio.inf.br/p6/api/add/', {
+            method: 'POST',
+            body: formData
+        })
+        .then(resp => resp.json())
+        .then(result => {
+            if (result.success) {
+                document.getElementById('resultado').textContent = '✅ Veículo adicionado com sucesso!';
+            } else {
+                console.log('Resposta da API:', result);
+                document.getElementById('resultado').textContent = '❌ Erro ao adicionar veículo.';
+            }
+            event.target.reset();
+        })
+        .catch(error => {
+            document.getElementById('resultado').textContent = '❌ Erro ao adicionar veículo.';
+            console.error('Erro:', error);
+        });
+    });
+  </script>
+</body>
+</html>
