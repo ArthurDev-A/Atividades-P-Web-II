@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixinha">
+        <h1>Formulário</h1>
+        <form id="formulario">
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep">
+            <button type="button" onclick="buscarEndereco()">Procurar Endereço</button>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco">
+            <button type="submit">OK</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
