@@ -10,8 +10,11 @@ Este projeto é um backend básico para gerenciamento de usuários com cadastro,
 
 ### 1. Acesse a pasta raiz do projeto
 
+Abra o terminal na pasta raiz do projeto chamada app.
+Se estiver em outra pasta, navegue até ela usando o comando cd. Por exemplo:
+
 ```bash
-cd app/
+cd /caminho/para/seu/projeto/app
 ```
 
 ---
