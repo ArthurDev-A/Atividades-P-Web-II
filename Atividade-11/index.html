@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuSite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">MeuSite</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Seção de Destaque -->
+    <section class="destaque">
+        <img src='img/Imagem feia que não é a das pedras.jpg' alt="Luzes desfocadas de uma cidade à noite com prédios iluminados e tráfego movimentado.">
+        <h1>Manchete Principal</h1>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Lista de Notícias -->
+        <section class="noticias">
+            <div class="card">
+                <img src="img/barcos.jpg" alt="Barco">
+                <h2>Embarcação histórica atrai turistas no porto da cidade</h2>
+                <p>Um antigo veleiro restaurado se tornou a nova atração turística do porto central. A embarcação, com design clássico e detalhes em madeira, oferece passeios culturais e experiências náuticas para visitantes. A iniciativa busca valorizar o patrimônio marítimo e incentivar o turismo local.</p>
+            </div>
+            <div class="card">
+                <img src="img/lago.jpg" alt="Montanhas e Lago">
+                <h2>Região montanhosa atrai visitantes com paisagens deslumbrantes</h2>
+                <p>Uma cadeia de montanhas cercando um lago cristalino vem se tornando um destino turístico cada vez mais procurado. A beleza natural, trilhas ecológicas e a estrada panorâmica que corta a floresta oferecem experiências únicas para quem busca contato com a natureza e aventura.</p>
+            </div>
+            <div class="card">
+                <img src="img/por do sol.jpg" alt="Pôr do Sol">
+                <h2>Pôr do sol inspira turistas e simboliza conexão com a natureza</h2>
+                <p>Um espetáculo natural chamou a atenção de visitantes em uma praia paradisíaca. Durante o pôr do sol, casais e famílias aproveitaram para registrar momentos únicos, transformando a paisagem em cenário perfeito para fotos e celebrações ao ar livre.</p>
+            </div>
+            <div class="card">
+                <img src="img/bancos.jpg" alt="Dois bancos vazios em um parque coberto por folhas alaranjadas durante o outono">
+                <h2>Outono encanta visitantes em parque da cidade</h2>
+                <p>Com a chegada do outono, o Parque Central se transforma em um verdadeiro espetáculo natural. Árvores tingidas de tons dourados e vermelhos formam um tapete de folhas pelo chão, encantando moradores e turistas. Na manhã desta quinta-feira, os bancos do parque, ainda vazios, eram convite silencioso para momentos de contemplação. A prefeitura reforça a importância de preservar o ambiente e manter o local limpo para que todos possam aproveitar a beleza da estação.</p>
+            </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Categorias</h3>
+            <ul>
+                <li>Tecnologia</li>
+                <li>Esportes</li>
+                <li>Política</li>
+                <li>Entretenimento</li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Contato: contato@meusite.com</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Menu hambúrguer
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('.nav');
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
